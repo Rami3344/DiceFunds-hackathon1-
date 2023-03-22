@@ -1,0 +1,592 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+/*NavBar*/
+.navbar{
+  overflow-x: hidden;
+  position: fixed;
+  background-color: #2d2d2b;
+  display: inline-block;
+  width: 100%;
+  z-index: 9999;
+  height: 120px;
+}
+.navbar .logo{
+  position: absolute;
+  width: 9%;
+  margin-left: 30px;
+  color: #6eee8b;
+  padding-top: 1vw;
+}
+.navbar .nav-list {
+  display:inline-block;
+  margin-left: 16vw;
+  width: 60%;
+}
+.navbar .nav-list ul{
+  display: flex;
+}
+.navbar .nav-list li{
+  list-style: none;
+  margin: 20px;
+  
+}
+.navbar .nav-list li a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color:#6eee8b;
+  transition: 0.5s;
+  font-size: 35px;
+}
+.navbar .nav-list li a:hover{
+  padding: 9px;
+  transition: 0.5s;
+  border-radius: 8px;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+  background-color: #333331;
+}
+.navbar .register{
+  float: right;
+  width: 20%;
+  margin-top: 1.7%;
+}
+.navbar .register button{
+  background-color:#2d2d2b ;
+  color:white ;
+  margin-right: 10%;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size:24px ;
+  padding: 10px;
+  border-radius: 15px;;
+  border: none;
+  width: 120px;
+  transition: 0.5s;
+}
+.navbar .register button:hover{
+  transition: 0.5s;
+  cursor: pointer;
+  color: #2d2d2b;
+  background-color: #6eee8b;
+
+}
+/*Home*/
+.home{
+  display: flex;
+  padding-top: 150px;
+  height: 740px;
+  background-color: white;
+}
+.home .dices{
+  margin-left: 200px;
+}
+.home img{
+  width: 480px;
+}
+.home .d1{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 30px;
+  animation-name:diceroll ;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+
+}
+@keyframes diceroll{
+  0%{transform:rotateZ(0deg)}
+  50%{transform:rotateZ(30deg)}
+  100%{transform: rotateZ(0deg);}
+}
+@keyframes diceroll2{
+  0%{transform:rotateZ(30deg)}
+  50%{transform:rotateZ(0deg)}
+  100%{transform: rotateZ(30deg);}
+}
+.home .d2{
+  position: absolute;
+  margin-top: 320px;
+  margin-left: 200px;
+  animation-name:diceroll2 ;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+.home p{
+  width:35%;
+  margin-left: 10%;
+  margin-top: 15%;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 600;
+  font-size: 90px;
+  color: #2d2d2b;
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  transition: 1s;
+  cursor: pointer;
+}
+.home p:hover{
+  font-size: 85px;
+  transition: 1s;
+}
+
+@keyframes slide{
+  0%{transform: translateX(-40px);}
+  50%{transform: translateX(0px);}
+  100%{transform: translateX(-40px);}
+}
+/*AboutUs*/
+.about{
+  background-color: #2d2d2b;
+  height: 800px;
+}
+.about h1{
+  text-align: center;
+  font-size: 60px;
+  padding-top: 80px;
+  color: white;
+  margin-bottom: 80px;
+}
+.about .members{
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.about .members h2{
+  font-size: 35px;
+  color: white;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+.about .members p{
+  font-size: 25px;
+  color: white;
+  position: relative;
+  font-family: 'Montserrat Medium',sans-serif;
+  text-align: center;
+}
+.about .members .img{
+  border: 1px solid gray;
+  height: 240px;
+  width: 240px;
+  border-radius: 30px;
+}
+.whatis{
+  background-color: white;
+  height: 800px;
+}
+.whatis h2{
+  margin-left: 60px;
+  padding-top:250px ;
+  width:50%;
+  color: #6eee8b;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-size: 50px;
+  letter-spacing: 6px;
+}
+.whatis p{
+  color: #2d2d2b;
+  font-size: 35px;
+  font-family: 'Montserrat Medium',sans-serif;
+  margin-left: 60px;
+  width: 50%;
+}
+.whatis img{
+  float:right;
+  margin-top: 12%;
+  margin-right: 100px;
+}
+/*Activities*/
+.activities{
+  background-color: #2d2d2b;
+  height: 1200px;
+}
+.activities h1{
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+.activity{
+  display: flex;
+  justify-content: space-between;
+
+}
+.activity .act1{
+  border-bottom-left-radius:80px ;
+  border-bottom-right-radius:80px ;
+  margin-left: 70px;
+  width: 350px;
+  height: 500px;
+  background-color: #6eee8b;
+}
+.activity .act2{
+  border-bottom-left-radius:80px ;
+  border-bottom-right-radius:80px ;
+  width: 350px;
+  height: 500px;
+  background-color: #6eee8b;
+}
+.activity .act3{
+  border-bottom-left-radius:80px ;
+  border-bottom-right-radius:80px ;
+  margin-right: 70px;
+  width: 350px;
+  height: 500px;
+  background-color: #6eee8b;
+}
+.activity img{
+  margin-top: 40px;
+  margin-left: 8%;
+  width: 300px;
+}
+.activity a{
+  text-decoration: none;
+  color:#6eee8b ;
+  padding:15px
+
+}
+.activity a:hover{
+  color: #2d2d2b;
+}
+.activity button{
+  text-align: center;
+  width: 280px;
+  font-size: 25px;
+  display: absolute;
+  margin-top: 40px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  background-color:#2d2d2b ;
+  color: #6eee8b;
+  margin-left: 9.5%;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.activity button:hover{
+  background-color:white ;
+  color: #333331;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.roll-dice h1{
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  width: 100%;
+}
+.roll-dice .dices{
+  display: flex;
+  justify-content: space-between;
+  margin:0px 200px
+}
+.roll-dice .dice1{
+  width: 200px;
+  border-radius: 40px;
+  height: 200px;
+  background-color: #6eee8b;
+}
+.roll-dice .dice2{
+  width: 200px;
+  border-radius: 40px;
+  height: 200px;
+  background-color: #6eee8b;
+}
+.roll-dice .dice3{
+  width: 200px;
+  border-radius: 40px;
+  height: 200px;
+  background-color: #6eee8b;
+}
+.activitie1{
+  background-color: #ffffff;
+  padding-top: 20px;
+  height: 800px;
+}
+.ad1{
+  position: absolute;
+  margin-left: 10%;
+}
+.ad2{
+  position: absolute;
+  margin-left: 80%;
+}
+.activitie2{
+  background-color: #ffffff;
+  height: 800px;
+}
+.ad3{
+  position: absolute;
+  margin-left: 10%;
+}
+.ad4{
+  position: absolute;
+  margin-left: 80%;
+}
+.activitie3{
+  background-color: #ffffff;
+  height: 800px;
+}
+.ad5{
+  position: absolute;
+  margin-left: 10%;
+}
+.ad6{
+  position: absolute;
+  margin-left: 80%;
+}
+.acts h2{
+  font-size: 50px;
+  margin-left: 0%;
+  text-align: center;
+}
+.content3{
+  display: absolute;
+  margin-top: 10%;
+  margin-left: 45%;
+}
+.content3 p{
+  font-size: 40px;
+  font-family: 'Montserrat Medium',sans-serif;
+}
+.content3 button{
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #6eee8b;
+  border: none;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.content2{
+  margin-left: 42%;
+  margin-top:10% ;
+  display: grid;
+}
+.content2 input{
+  width: 250px;
+  font-size: 45px;
+}
+.content2 button{
+  border-radius: 30px;
+  background-color: #6eee8b;
+  border: none;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+  width:200px;
+  font-size: 25px;
+}
+.content2 p{
+  font-size: 40px;
+  margin-left: 8%;
+}
+.content1{
+  display: grid;
+}
+.content1 button{
+  border-radius: 30px;
+  background-color: #6eee8b;
+  border: none;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 45%;
+  width:200px;
+  font-size: 25px;
+}
+.content1 img{
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 39%;
+  border-radius: 70px;
+}
+.content1 input{
+  margin-top: 30px;
+  width: 300px;
+  font-size: 40px;
+  border-radius: 30px;
+  padding: 10px;
+  margin-left:41.5% ;
+}
+.dices a{
+  text-align: center;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-size: 30px;
+
+  text-decoration: none;
+  color: #2d2d2b;
+}
+.dices p {
+  padding-top: 35%;
+}
+@keyframes animation1 {
+  0%{transform: translateX(0px);}
+  25%{transform: translateX(600px);}
+  50%{transform: translateX(1200px);}
+  75%{transform: translateX(600px);}
+  100%{transform: translateX(0px);}
+}
+@keyframes animation2 {
+  0%{transform: translateX(-600px);}
+  25%{transform: translateX(600px);}
+  50%{transform: translateX(000px);}
+  75%{transform: translateX(600px);}
+  100%{transform: translateX(-600px);}
+}
+@keyframes animation3 {
+  0%{transform: translateX(0px);}
+  25%{transform: translateX(-600px);}
+  50%{transform: translateX(-1200px);}
+  75%{transform: translateX(-600px);}
+  100%{transform: translateX(0px);}
+}
+.dices .dice1{
+    animation: animation1;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+    transition: 1s;
+    cursor: pointer;
+}
+.dices .dice2{
+  animation: animation2;
+  cursor: pointer;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  transition: 1s;
+}
+.dices .dice3{
+  animation: animation3;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  cursor: pointer;
+  animation-iteration-count: infinite;
+  transition: 1s;
+}
+/*Donation*/
+.donation{
+  background-color: rgb(255, 255, 255);
+  height: 700px;
+}
+.donation h1{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Montserrat Medium',sans-serif;
+  padding-top: 60px;
+  letter-spacing: 8px;
+  color: #2d2d2b;
+}
+.foundation img{
+  background-color: #2d2d2b;
+  border-radius: 50px;
+  width: 220px;
+  height: 220px;
+}
+.foundation{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.foundation h2{
+  position: absolute;
+  margin-left: 20px;
+  text-align: center;
+}
+/*contact*/
+.contact{
+  background-color: #2d2d2b;
+  height: 820px;
+}
+.contact img{
+  position: absolute;
+  margin-left: 80px;
+  padding-top: 150px;
+}
+.contact h2{
+  margin-left: 38%;
+  font-size: 55px;
+  letter-spacing: 8px;
+  padding-top: 80px;
+  font-family: 'Montserrat Medium',sans-serif;
+  color: #6eee8b;
+}
+
+.contact .inpts{
+  display: grid;
+  position: absolute;
+  margin-left: 38%;
+
+}
+.contact .inpts input{
+  border-radius: 20px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  padding: 20px;
+  border:none;
+  text-align: center;
+}
+.contact textarea{
+  float:  right;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  border:none;
+}
+.contact .inpts button{
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #6eee8b;
+  border: none;
+  font-family: 'Montserrat Medium',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 25px;
+}
+.contact .socials {
+  background-color: white;
+  position: absolute;
+  margin-left: 67%;
+  width: 450px;
+  height: 550px;
+  border-radius: 60px;
+}
+.contact .socials h3{
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: 'Montserrat Medium',sans-serif;
+}
+.contact .socials p{
+  margin-left: 50px;
+  font-family: 'Montserrat Medium',sans-serif;
+  margin-bottom: 100px;
+  font-size: 25px;
+}
