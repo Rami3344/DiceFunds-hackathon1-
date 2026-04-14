@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/DiceFunds-hackathon1-/static/css/main.0a659726.css",
+    "main.js": "/DiceFunds-hackathon1-/static/js/main.23585201.js",
+    "static/js/787.9f67ab58.chunk.js": "/DiceFunds-hackathon1-/static/js/787.9f67ab58.chunk.js",
+    "static/media/panda.JPG": "/DiceFunds-hackathon1-/static/media/panda.8b8a406e8d03fd4eff0c.JPG",
+    "static/media/ad1.png": "/DiceFunds-hackathon1-/static/media/ad1.c4e555e4c956abcc97a0.png",
+    "static/media/charfi.png": "/DiceFunds-hackathon1-/static/media/charfi.76254efc8becf16c4d9e.png",
+    "static/media/ammar.png": "/DiceFunds-hackathon1-/static/media/ammar.93e37c512910ad02304c.png",
+    "static/media/rambo.png": "/DiceFunds-hackathon1-/static/media/rambo.18257705cfbc23efe351.png",
+    "static/media/Donate.png": "/DiceFunds-hackathon1-/static/media/Donate.8c4c5cf5c95fba0340de.png",
+    "static/media/DiceOne.png": "/DiceFunds-hackathon1-/static/media/DiceOne.58bb3112e8dcdee5755f.png",
+    "static/media/DiceTwo.png": "/DiceFunds-hackathon1-/static/media/DiceTwo.af201bf83e1a7eeaf364.png",
+    "static/media/contLog.png": "/DiceFunds-hackathon1-/static/media/contLog.7e01b42739fd24010018.png",
+    "static/media/Logo.png": "/DiceFunds-hackathon1-/static/media/Logo.688530d2c9dbdf97ccb4.png",
+    "static/media/ad2.png": "/DiceFunds-hackathon1-/static/media/ad2.1d11daf908928f9113bf.png",
+    "index.html": "/DiceFunds-hackathon1-/index.html",
+    "main.0a659726.css.map": "/DiceFunds-hackathon1-/static/css/main.0a659726.css.map",
+    "main.23585201.js.map": "/DiceFunds-hackathon1-/static/js/main.23585201.js.map",
+    "787.9f67ab58.chunk.js.map": "/DiceFunds-hackathon1-/static/js/787.9f67ab58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a659726.css",
+    "static/js/main.23585201.js"
+  ]
+}
